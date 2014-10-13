@@ -10,8 +10,8 @@ namespace _2_2_digital_vackarklocka
     {
         private int _hour;
         private int _minute;
-        private int alarmHour;
-        private int alarmMinute;
+        private int _alarmHour;
+        private int _alarmMinute;
 
         public AlarmClock()
         {
@@ -20,50 +20,63 @@ namespace _2_2_digital_vackarklocka
 
         public AlarmClock(int hour, int minute)
         {
-            throw new System.NotImplementedException();
-        }
+            
 
+            
+        }
         public AlarmClock(int hour, string minute, int alarmHour, int alarmMinute)
         {
             throw new System.NotImplementedException();
         }
-
         public int AlarmHour 
-        { 
-            get; 
-            set; 
+        {
+            get { return _alarmHour; }
+            set
+            {
+                if (value < 0 || value > 23)
+                {
+                    throw new ArgumentException("Talet är inte i intervallet 0-23");
+                }
+                _alarmHour = value;
+            } 
         }
 
         public int AlarmMinute
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get { return _alarmMinute; }
             set
             {
+                if (value < 0 || value > 59)
+                {
+                    throw new ArgumentException("Talet är inte i intervallet 0-59");
+                }
+                _alarmMinute = value;
             }
         }
 
         public int Hour
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get { return _hour; }
             set
             {
+                if (value < 0 || value > 23)
+                {
+                    throw new ArgumentException("Talet är inte i intervallet 0-23");
+                }
+                _hour = value;
             }
         }
 
         public int Minute
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get { return _minute; }
             set
             {
+                if (value < 0 || value > 59)
+                {
+                    throw new ArgumentException("Talet är inte i intervallet 0-59");
+                }
+                _minute = value;
             }
         }
 

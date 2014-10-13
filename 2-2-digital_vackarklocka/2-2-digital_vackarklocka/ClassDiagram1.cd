@@ -2,9 +2,6 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="_2_2_digital_vackarklocka.AlarmClock">
     <Position X="4.5" Y="0.5" Width="4.5" />
-    <Members>
-      <Method Name="AlarmClock" Hidden="true" />
-    </Members>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEEBAAEAAQAAAAEAAAAACYAAAAEAAAAAAA=</HashCode>
       <FileName>AlarmClock.cs</FileName>
